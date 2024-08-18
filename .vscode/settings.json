@@ -61,5 +61,9 @@
 	],
 	"haxeTestExplorer.testCommand": [
 		"haxelib", "run", "lime", "test", "tests/unit/project.xml", "cpp", "--haxelib=test-adapter"
-	]
+	],
+	"workbench.colorCustomizations": {
+		"minimap.background": "#00000000",
+		"scrollbar.shadow": "#00000000"
+	}
 }

@@ -377,6 +377,26 @@ class FlxSprite extends FlxObject
 		useFramePixels = FlxG.renderBlit;
 		if (SimpleGraphic != null)
 			loadGraphic(SimpleGraphic);
+
+		create();
+	}
+
+	public function create():Void {}
+
+	public function addToCurrentState():Void {
+		if(FlxG.state != null) FlxG.state.add(this);
+	}
+
+	public function removeFromCurrentState():Void {
+		if(FlxG.state != null) FlxG.state.remove(this);
+	}
+
+	public function addToCurrentSubState():Void {
+		if(FlxG.state != null) FlxG.state.subState.add(this);
+	}
+
+	public function removeFromCurrentSubState():Void {
+		if(FlxG.state.subState != null) FlxG.state.subState.remove(this);
 	}
 
 	@:noCompletion
