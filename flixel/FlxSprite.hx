@@ -383,7 +383,7 @@ class FlxSprite extends FlxObject
 		if(FlxG.state != null) FlxG.state.add(object);
 	}
 
-	public function removeFromCurrentState():Void {
+	public function removeFromCurrentState(object:FlxObject):Void {
 		if(FlxG.state != null) FlxG.state.remove(object);
 	}
 
